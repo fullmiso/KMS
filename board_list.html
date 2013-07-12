@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<html lang="kr">
+<head>
+<title>(주)퓨전소프트 지식관리시스템</title>
+<meta charset="utf-8">
+<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div id="wrapAll" class="BL">
+  <!-- loading표시 -->
+	<!--<div id="mask"></div>
+	<div id="loading">
+		<p class="loading_img"><img src="../img/loading.gif" width="357" height="37" alt="진행중입니다."></p>
+		<p class="loading_txt">로딩중입니다.</p>
+	</div> -->
+	<!-- //loading표시 -->
+	<header class="subHD clearfix">
+		<div class="subTop">
+			<div class="subTop-L">
+				<div class="lg v-align"><img src="../img/@tmp_lg.png" alt="(주)퓨전소프트"></div>
+				<h1 class="v-align"><img src="../img/@tmp_BI.png" alt="지식관리시스템"></h1>
+			</div>
+			<ul>
+				<li><a href="#none"><img src="../img/btn_go_main.gif" alt="메인화면"></a></li>
+				<li><a href="#none"><img src="../img/btn_sitemap.gif" alt="사이트맵"></a></li>
+			</ul>
+		</div>
+		<div class="gnbArea">
+			<nav class="gnb">
+				<ul>
+					<li class="on"><a href="#none"><span><img src="../img/ico_gnb_notice.png" alt="알림정보"> 알림정보</span></a></li>
+					<li><a href="#none"><span><img src="../img/ico_gnb_work.png" alt="업무관리"> 업무관리</span></a></li>
+					<li><a href="#none"><span><img src="../img/ico_gnb_knowledge.png" alt="지식관리"> 지식관리</span></a></li>
+					<li><a href="#none"><span><img src="../img/ico_gnb_project.png" alt="프로젝트관리"> 프로젝트관리</span></a></li>
+					<li><a href="#none"><span><img src="../img/ico_gnb_manual.png" alt="업무매뉴얼"> 업무매뉴얼</span></a></li>
+					<li><a href="#none"><span><img src="../img/ico_gnb_data.png" alt="데이터관리"> 데이터관리</span></a></li>
+					<li><a href="#none"><span><img src="../img/ico_gnb_system.png" alt="시스템관리"> 시스템관리</span></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="subMD clearfix">
+		<div class="subLT">
+			<div class="memberArea">
+				<ul>
+					<li class="user_name">홍길동 과장</li>
+					<li class="last_contact">최근접속 : <b>2013-06-27 13:37:43</b></li>
+					<li class="not_read">읽지 않은 업무: <b>0건</b> </li>
+					<li class="member_btn"><a href="#none"><img src="../img/btn_logout.gif" alt="로그아웃"></a> <a href="#none"><img src="../img/btn_member_info_edit.gif" alt="회원정보수정"></a></li>
+				</ul>
+			</div>
+			<nav class="lnb">
+				<ul class="d2">
+					<li class="d2"><a href="#none" class="d2_on"><span class="txt">공지사항</span><span class="open">서브메뉴열기</span></a>
+						<ul class="d3">
+							<li class="d3"><a href="#none" class="d3_on">회사 공지사항</a></li>
+							<li class="d3"><a href="#none">KMS 공지사항</a></li>
+							<li class="d3"><a href="#none">부서 공지사항</a></li>
+						</ul>
+					</li>
+					<li class="d2"><a href="#none"><span class="txt">업무게시판</span><span class="close">서브메뉴열기</span></a></li>
+					<li class="d2"><a href="#none"><span class="txt">오류등록게시판</span><span class="close">서브메뉴열기</span></a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="subRT">
+			<div class="ptitArea clearfix">
+				<ul>
+					<li><a href="#none">메인</a></li>
+					<li>알림정보</li>
+					<li>공지사항</li>
+					<li class="LC">회사공지사항</li>
+				</ul>
+			</div>
+			<!-- contents 시작 -->
+			<section id="contents">
+				<section class="expArea">
+					회사 공지사항 게시판입니다.<br>
+					경영지원파트에서 운영하는 게시판으로 모든 게시글에 대해서는 댓글이나 답변이 필요없습니다.<br>
+					미풍양속에 어긋나거나 상업성광고, 정치적 목적, 특정개인이나 단체의 명예를 훼손할 경우 사전 예고없이 강제 삭제 될 수 있습니다.
+				</section>
+				<section class="srhArea">
+					<div class="srhCon">
+						<fieldset>
+							<legend>검색</legend>
+							<label for="search_value">검색유형</label>
+							<span class="select-box">
+								<select name="search_type" id="search_type" class="w80" title="검색유형 선택">
+									<option value="title" selected title="성명">성명</option>
+									<option value="contents" title="내용">내용</option>
+								</select>
+							</span>
+							<label for="search_value">검색어</label>
+							<input type="text" name="search_value" id="search_value" class="inbox w150" title="검색어 입력">
+							<a href="#none" onclick="go_search();return false;" class="btn_srh">검색</a>
+						</fieldset>
+					</div>
+				</section>
+				<section class="brd_info clearfix">
+					<div class="total_num">총 <b>189</b>개</div>
+					<ul class="list_num">
+						<li><a href="#none">10</a></li>
+						<li class="on"><a href="#none">20</a></li>
+						<li><a href="#none">30</a></li>
+						<li><a href="#none">40</a></li>
+						<li><a href="#none">50</a></li>
+					</ul>
+				</section>
+				<div class="brd_list clearfix">
+				<table class="tbl_type_1">
+					<col style="width:60px;">
+					<col>
+					<col style="width:80px;">
+					<col style="width:90px;">
+					<col style="width:80px;">
+					<col style="width:70px;">
+					<thead>
+					<tr>
+						<th>
+							<div class="tit_group clearfix">
+								<span>번호</span>
+								<ul>
+									<li><a href="#none"><img src="../img/btn_arrange_up.gif" alt="올림차순정렬"></a></li>
+									<li><a href="#none"><img src="../img/btn_arrange_down.gif" alt="내림차순정렬"></a></li>
+								</ul>
+							</div>
+						</th>
+						<th class="title">
+							<div class="tit_group clearfix">
+								<span>제목</span>
+								<ul>
+									<li><a href="#none"><img src="../img/btn_arrange_up.gif" alt="올림차순정렬"></a></li>
+									<li><a href="#none"><img src="../img/btn_arrange_down.gif" alt="내림차순정렬"></a></li>
+								</ul>
+							</div>
+						</th>
+						<th>
+							<div class="tit_group clearfix">
+								<span>글쓴이</span>
+								<ul>
+									<li><a href="#none"><img src="../img/btn_arrange_up.gif" alt="올림차순정렬"></a></li>
+									<li><a href="#none"><img src="../img/btn_arrange_down.gif" alt="내림차순정렬"></a></li>
+								</ul>
+							</div>
+						</th>							
+						<th>
+							<div class="tit_group clearfix">
+								<span>날짜</span>
+								<ul>
+									<li><a href="#none"><img src="../img/btn_arrange_up.gif" alt="올림차순정렬"></a></li>
+									<li><a href="#none"><img src="../img/btn_arrange_down.gif" alt="내림차순정렬"></a></li>
+								</ul>
+							</div>
+						</th>	
+						<th><div class="tit_group clearfix"><span>첨부파일</span></div></th>							
+						<th>
+							<div class="tit_group clearfix">
+								<span>조회</span>
+								<ul>
+									<li><a href="#none"><img src="../img/btn_arrange_up.gif" alt="올림차순정렬"></a></li>
+									<li><a href="#none"><img src="../img/btn_arrange_down.gif" alt="내림차순정렬"></a></li>
+								</ul>
+							</div>
+						</th>								
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>10</td>	
+						<td class="aL"><a href="#">제목제목제목제목제목제목제목</a> <img src="../img/ico_new.gif" alt="새글"></td>						
+						<td>홍길동</td>						
+						<td>2012.08.30</td>	
+						<td></td>		
+						<td>10	</td>							
+					</tr>
+					<tr>
+						<td>9</td>	
+						<td class="aL"><a href="#">제목제목제목제목제목제목</a>	</td>							
+						<td>홍길동</td>							
+						<td>2013.08.30</td>	
+						<td><a href="#none"><img src="../img/ico_file.gif" alt="첨부파일"></a></td>		
+						<td>10</td>							
+					</tr>
+					<tr>
+						<td>8</td>	
+						<td class="aL"><img src="../img/ico_reply.gif" alt="답글"><a href="#">제목제목제목제목제목제목</a>	</td>							
+						<td>홍길동</td>							
+						<td>2013.08.30</td>	
+						<td><a href="#none"><img src="../img/ico_file.gif" alt="첨부파일"></a></td>		
+						<td>10</td>							
+					</tr>
+					<tr>
+						<td>8</td>	
+						<td class="aL"><a href="#">제목제목제목제목제목제목</a>	</td>							
+						<td>홍길동</td>							
+						<td>2013.08.30</td>	
+						<td><a href="#none"><img src="../img/ico_file.gif" alt="첨부파일"></a></td>		
+						<td>10</td>							
+					</tr>
+					<tr>
+						<td>7</td>	
+						<td class="aL"><a href="#">제목제목제목제목제목제목제목제목제목</a>	</td>							
+						<td>홍길동</td>							
+						<td>2013.08.30</td>	
+						<td><a href="#none"><img src="../img/ico_file.gif" alt="첨부파일"></a></td>		
+						<td>10</td>							
+					</tr>
+					<tr>
+						<td>6</td>	
+						<td class="aL"><a href="#">제목제목제목제목제목제목</a>	</td>							
+						<td>홍길동</td>							
+						<td>2013.08.30</td>	
+						<td><a href="#none"><img src="../img/ico_file.gif" alt="첨부파일"></a></td>		
+						<td>10</td>							
+					</tr>
+					<tr>
+						<td>5</td>	
+						<td class="aL"><a href="#">제목제목제목제목제목제목제목제목제목</a>	</td>							
+						<td>홍길동</td>							
+						<td>2013.08.30</td>	
+						<td><a href="#none"><img src="../img/ico_file.gif" alt="첨부파일"></a></td>		
+						<td>10</td>							
+					</tr>
+					<tr>
+						<td>4</td>	
+						<td class="aL"><a href="#">제목제목제목제목제목제목제목제목제목제목제목제목</a>	</td>							
+						<td>홍길동</td>							
+						<td>2013.08.30</td>	
+						<td><a href="#none"><img src="../img/ico_file.gif" alt="첨부파일"></a></td>		
+						<td>10</td>							
+					</tr>
+					<tr>
+						<td>3</td>	
+						<td class="aL"><a href="#">제목제목제목제목제목제목</a>	</td>							
+						<td>홍길동</td>							
+						<td>2013.08.30</td>	
+						<td><a href="#none"><img src="../img/ico_file.gif" alt="첨부파일"></a></td>		
+						<td>10</td>							
+					</tr>
+					<tr>
+						<td>2</td>	
+						<td class="aL"><a href="#">제목제목제목제목제목제목</a>	</td>							
+						<td>홍길동</td>							
+						<td>2013.08.30</td>	
+						<td><a href="#none"><img src="../img/ico_file.gif" alt="첨부파일"></a></td>		
+						<td>10</td>							
+					</tr>
+					<tr>
+						<td>1</td>	
+						<td class="aL"><a href="#">제목제목제목제목제목제목</a>	</td>							
+						<td>홍길동</td>							
+						<td>2013.08.30</td>	
+						<td><a href="#none"><img src="../img/ico_file.gif" alt="첨부파일"></a></td>		
+						<td>10</td>							
+					</tr>
+					</tbody>
+				</table>
+				</div>
+				<div id="pagingnav">
+					<a href="#" title="맨앞" class="num_first"></a><a href="#" title="이전" class="num_prev"></a><strong class="cur_num">1</strong> <a href="#" title="2" class="num_box">2</a> <a href="#" title="3" class="num_box">3</a> <a href="#" title="4" class="num_box">4</a> <a href="#" title="5" class="num_box">5</a> <a href="#" title="6" class="num_box">6</a> <a href="#" title="7" class="num_box">7</a> <a href="#" title="8" class="num_box">8</a> <a href="#" title="9" class="num_box">9</a> <a href="#" title="10" class="num_box">10</a> <a href="#" title="다음" class="num_next"></a><a href="#" title="맨뒤" class="num_end"></a>
+				</div>
+				<div class="btnAreaR">
+					<span class="button CB"><a href="">등록</a></span>
+					<span class="button KB"><a href="">취소</a></span>				
+				</div>
+			</section>
+			<!-- //contents 끝 -->
+		</div>
+	</div>
+	<footer class="subFT">
+		<div class="subFT_L v-align">
+			(주)퓨전소프트 KMS 지식관리시스템<br>
+			<span class="s-txt">&copy; 본 지식관리시스템의 모든 저작권은 (주)퓨전소프트에 있음을 명시합니다.</span>
+		</div>
+		<div class="subFT_R v-align">
+			지식관리시스템 운영 담당 : <span class="admin_tel">053-609-7200</span> <span class="admin_email">kms_admin@fusionsoft.co.kr</span>
+		</div>
+	</footer>
+</div>
+</body>
+</html>
