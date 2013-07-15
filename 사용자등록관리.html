@@ -1,0 +1,495 @@
+<!-- list -->
+
+<!-- contents 시작 -->
+<section id="contents">
+	<section class="expArea">
+		지식관리시스템 사용자 전체목록입니다.<br>
+		지식관리시스템 사용자 정보를 자세히 보거나 수정, 삭제할 수 있으며 새로운 사용자를 등록할 수 있습니다.<br>
+	</section>
+	<section class="srhArea">
+		<div class="srhCon">
+			<fieldset>
+				<legend>검색</legend>
+				<label for="search_value">조회조건</label>
+				<span class="select-box">
+					<select name="search_type" id="search_type" class="w80" title="검색유형 선택">
+						<option value="" selected title="전체">전체</option>
+						<option value="" title="가입신청">가입신청</option>
+						<option value="" title="삭제">삭제</option>
+						<option value="" title="승인">승인</option>
+					</select>
+				</span>
+				<span class="select-box">
+					<select name="search_type" id="search_type" class="w80" title="검색유형 선택">
+						<option value="" selected title="아이디">아이디</option>
+						<option value="" title="성명">성명</option>
+					</select>
+				</span>
+				<label for="search_value">검색어</label>
+				<input type="text" name="search_value" id="search_value" class="inbox w150" title="검색어 입력">
+				<a href="#none" onclick="go_search();return false;" class="btn_srh">검색</a>
+			</fieldset>
+		</div>
+	</section>
+	<section class="brd_info clearfix">
+		<div class="total_num">총 <b>189</b>개</div>
+		<ul class="list_num">
+			<li><a href="#none">10</a></li>
+			<li class="on"><a href="#none">20</a></li>
+			<li><a href="#none">30</a></li>
+			<li><a href="#none">40</a></li>
+			<li><a href="#none">50</a></li>
+		</ul>
+	</section>
+	<div class="brd_list clearfix">
+	<table class="tbl_type_1">
+		<col style="width:60px;">
+		<col style="width:40px;">
+		<col style="width:120px;">
+		<col style="width:80px;">
+		<col>
+		<col style="width:120px;">
+		<col style="width:120px;">
+		<col style="width:80px;">
+		<thead>
+		<tr>
+			<th>
+				<div class="tit_group clearfix">
+					<span>번호</span>
+					<ul>
+						<li><a href="#none"><img src="../img/btn_arrange_up.gif" alt="올림차순정렬"></a></li>
+						<li><a href="#none"><img src="../img/btn_arrange_down.gif" alt="내림차순정렬"></a></li>
+					</ul>
+				</div>
+			</th>
+			<th>
+				<input type="checkbox" name="" value="" title="목록 전체선택">
+			</th>
+			<th class="title">
+				<div class="tit_group clearfix">
+					<span>아이디</span>
+					<ul>
+						<li><a href="#none"><img src="../img/btn_arrange_up.gif" alt="올림차순정렬"></a></li>
+						<li><a href="#none"><img src="../img/btn_arrange_down.gif" alt="내림차순정렬"></a></li>
+					</ul>
+				</div>
+			</th>
+			<th>
+				<div class="tit_group clearfix">
+					<span>성명</span>
+					<ul>
+						<li><a href="#none"><img src="../img/btn_arrange_up.gif" alt="올림차순정렬"></a></li>
+						<li><a href="#none"><img src="../img/btn_arrange_down.gif" alt="내림차순정렬"></a></li>
+					</ul>
+				</div>
+			</th>							
+			<th>
+				<div class="tit_group clearfix">
+					<span>이메일</span>
+				</div>
+			</th>	
+			<th>
+				<div class="tit_group clearfix">
+					<span>휴대폰</span>
+				</div>
+			</th>
+			<th>
+				<div class="tit_group clearfix">
+					<span>등록일</span>
+					<ul>
+						<li><a href="#none"><img src="../img/btn_arrange_up.gif" alt="올림차순정렬"></a></li>
+						<li><a href="#none"><img src="../img/btn_arrange_down.gif" alt="내림차순정렬"></a></li>
+					</ul>
+				</div>
+			</th>
+			<th>
+				<div class="tit_group clearfix">
+					<span>가입상태</span>
+					<ul>
+						<li><a href="#none"><img src="../img/btn_arrange_up.gif" alt="올림차순정렬"></a></li>
+						<li><a href="#none"><img src="../img/btn_arrange_down.gif" alt="내림차순정렬"></a></li>
+					</ul>
+				</div>
+			</th>								
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>10</td>
+			<td><input type="checkbox" name="" value="" title="목록선택"></td>
+			<td><a href="#none">aaabbbcccddd</a></td>						
+			<td>홍길동</td>	
+			<td class="aL">aaabbbccc@ddd.com</td>						
+			<td>010-4323-2323</td>	
+			<td>2013-05-30 9:40:31</td>		
+			<td>가입신청</td>							
+		</tr>
+		<tr>
+			<td>9</td>
+			<td><input type="checkbox" name="" value="" title="목록선택"></td>
+			<td><a href="#none">aaabbbcccddd</a></td>						
+			<td>홍길동</td>	
+			<td class="aL">aaabbbccc@ddd.com</td>						
+			<td>010-4323-2323</td>	
+			<td>2013-05-30 9:40:31</td>		
+			<td>승인</td>							
+		</tr>
+		<tr>
+			<td>10</td>
+			<td><input type="checkbox" name="" value="" title="목록선택"></td>
+			<td><a href="#none">aaabbbcccddd</a></td>						
+			<td>홍길동</td>	
+			<td class="aL">aaabbbccc@ddd.com</td>						
+			<td>010-4323-2323</td>	
+			<td>2013-05-30 9:40:31</td>		
+			<td>가입신청</td>							
+		</tr>
+		<tr>
+			<td>9</td>
+			<td><input type="checkbox" name="" value="" title="목록선택"></td>
+			<td><a href="#none">aaabbbcccddd</a></td>						
+			<td>홍길동</td>	
+			<td class="aL">aaabbbccc@ddd.com</td>						
+			<td>010-4323-2323</td>	
+			<td>2013-05-30 9:40:31</td>		
+			<td>승인</td>							
+		</tr>
+		<tr>
+			<td>10</td>
+			<td><input type="checkbox" name="" value="" title="목록선택"></td>
+			<td><a href="#none">aaabbbcccddd</a></td>						
+			<td>홍길동</td>	
+			<td class="aL">aaabbbccc@ddd.com</td>						
+			<td>010-4323-2323</td>	
+			<td>2013-05-30 9:40:31</td>		
+			<td>가입신청</td>							
+		</tr>
+		<tr>
+			<td>9</td>
+			<td><input type="checkbox" name="" value="" title="목록선택"></td>
+			<td><a href="#none">aaabbbcccddd</a></td>						
+			<td>홍길동</td>	
+			<td class="aL">aaabbbccc@ddd.com</td>						
+			<td>010-4323-2323</td>	
+			<td>2013-05-30 9:40:31</td>		
+			<td>승인</td>							
+		</tr>
+		<tr>
+			<td>10</td>
+			<td><input type="checkbox" name="" value="" title="목록선택"></td>
+			<td><a href="#none">aaabbbcccddd</a></td>						
+			<td>홍길동</td>	
+			<td class="aL">aaabbbccc@ddd.com</td>						
+			<td>010-4323-2323</td>	
+			<td>2013-05-30 9:40:31</td>		
+			<td>가입신청</td>							
+		</tr>
+		<tr>
+			<td>9</td>
+			<td><input type="checkbox" name="" value="" title="목록선택"></td>
+			<td><a href="#none">aaabbbcccddd</a></td>						
+			<td>홍길동</td>	
+			<td class="aL">aaabbbccc@ddd.com</td>						
+			<td>010-4323-2323</td>	
+			<td>2013-05-30 9:40:31</td>		
+			<td>승인</td>							
+		</tr>
+		<tr>
+			<td>10</td>
+			<td><input type="checkbox" name="" value="" title="목록선택"></td>
+			<td><a href="#none">aaabbbcccddd</a></td>						
+			<td>홍길동</td>	
+			<td class="aL">aaabbbccc@ddd.com</td>						
+			<td>010-4323-2323</td>	
+			<td>2013-05-30 9:40:31</td>		
+			<td>가입신청</td>							
+		</tr>
+		<tr>
+			<td>9</td>
+			<td><input type="checkbox" name="" value="" title="목록선택"></td>
+			<td><a href="#none">aaabbbcccddd</a></td>						
+			<td>홍길동</td>	
+			<td class="aL">aaabbbccc@ddd.com</td>						
+			<td>010-4323-2323</td>	
+			<td>2013-05-30 9:40:31</td>		
+			<td>승인</td>							
+		</tr>
+		</tbody>
+	</table>
+	</div>
+	<div id="pagingnav">
+		<a href="#" title="맨앞" class="num_first"></a><a href="#" title="이전" class="num_prev"></a><strong class="cur_num">1</strong> <a href="#" title="2" class="num_box">2</a> <a href="#" title="3" class="num_box">3</a> <a href="#" title="4" class="num_box">4</a> <a href="#" title="5" class="num_box">5</a> <a href="#" title="6" class="num_box">6</a> <a href="#" title="7" class="num_box">7</a> <a href="#" title="8" class="num_box">8</a> <a href="#" title="9" class="num_box">9</a> <a href="#" title="10" class="num_box">10</a> <a href="#" title="다음" class="num_next"></a><a href="#" title="맨뒤" class="num_end"></a>
+	</div>
+	<div class="btnAreaR">
+		<span class="button CB"><a href="">등록</a></span>
+		<span class="button KB"><a href="">삭제</a></span>				
+	</div>
+</section>
+<!-- //contents 끝 -->
+
+<!-- view -->
+<!-- contents 시작 -->
+<section id="contents">
+	<section class="expArea">
+		지식관리시스템 사용자 전체목록입니다.<br>
+		지식관리시스템 사용자 정보를 자세히 보거나 수정, 삭제할 수 있으며 새로운 사용자를 등록할 수 있습니다.<br>
+	</section>
+	<div class="brd_view clearfix">
+	<table class="tbl_type_2">
+		<col style="width:150px;">
+		<col>
+		<col style="width:150px;">
+		<col style="width:250px;">
+		<tbody>
+		<tr>
+			<th class="FC">아이디</th>	
+			<td class="aL FC">aaabbbccc</td>						
+			<th class="FC">휴대폰</th>	
+			<td class="aL FC">010-1234-5678</td>													
+		</tr>
+		<tr>
+			<th>비밀번호 힌트</th>	
+			<td class="aL">가장 기억에 남는 장소는?</td>						
+			<th>비밀번호 정답</th>	
+			<td class="aL">78787878</td>													
+		</tr>
+		<tr>
+			<th>성명</th>	
+			<td class="aL">홍길동</td>						
+			<th>소속</th>	
+			<td class="aL">대구본사</td>													
+		</tr>
+		<tr>
+			<th>부서</th>	
+			<td class="aL">경영기획부</td>						
+			<th>직급</th>	
+			<td class="aL">대리</td>													
+		</tr>
+		<tr>
+			<th>소속팀</th>	
+			<td class="aL">기획1팀</td>	
+			<th>직책</th>	
+			<td class="aL">팀원</td>												
+		</tr>
+		<tr>
+			<th>이메일</th>	
+			<td class="aL">aaabbbccc@ddd.com</td>	
+			<th>전화번호(집)</th>	
+			<td class="aL">053-123-4567</td>												
+		</tr>
+		<tr>
+			<th>전화번호(회사)</th>	
+			<td class="aL">053-123-4567</td>	
+			<th>팩스번호</th>	
+			<td class="aL">053-123-4567</td>												
+		</tr>
+		<tr>
+			<th>주소</th>	
+			<td class="aL" colspan="3">704-230 대구광역시 달서구 호산당 357-95번지</td>													
+		</tr>
+		</tbody>
+	</table>
+	</div>
+	<div class="btnArea">
+		<div class="btnAreaL">
+			<span class="button CB"><a href="">수정</a></span>
+			<span class="button CB"><a href="">삭제</a></span>
+		</div>
+		<div class="btnAreaR">
+			<span class="button KB"><a href="">전체목록</a></span>				
+		</div>
+	</div>
+</section>
+<!-- //contents 끝 -->
+
+<!-- write -->
+<!-- contents 시작 -->
+<section id="contents">
+	<section class="expArea">
+		지식관리시스템 사용자 전체목록입니다.<br>
+		지식관리시스템 사용자 정보를 자세히 보거나 수정, 삭제할 수 있으며 새로운 사용자를 등록할 수 있습니다.<br>
+	</section>
+	<section class="brd_info clearfix">
+		<img src="../img/ico_must.png"  alt="필수입력항목"> 는 필수입력항목입니다.
+	</section>
+	<div class="brd_write clearfix">
+	<table class="tbl_type_3">
+		<col style="width:150px;">
+		<col>
+		<col style="width:150px;">
+		<col style="width:280px;">
+		<tbody>
+		<tr>
+			<th class="FC"><span class="must">아이디</span></th>	
+			<td class="aL FC"><input type="text" name="" class="inbox w150" title="아이디"></td>						
+			<th class="FC"><span class="must">휴대폰</span></th>	
+			<td class="aL FC">
+				<span class="select-box">
+					<select name="search_type" id="search_type" class="w60" title="휴대폰 앞번호">
+						<option value="" selected title="010">010</option>
+						<option value="" title="011">011</option>
+						<option value="" title="016">016</option>
+						<option value="" title="017">017</option>
+						<option value="" title="017">018</option>
+						<option value="" title="017">019</option>
+					</select>
+				</span> - <input type="text" name="" class="inbox w50" title="휴대폰 중간번호"> - <input type="text" name="" class="inbox w50" title="휴대폰 뒷번호"></td>													
+		</tr>
+		<tr>
+			<th><span class="must">비밀번호 힌트</span></th>	
+			<td class="aL"><span class="select-box">
+					<select name="search_type" id="search_type" class="w300" title="비밀번호 힌트 선택">
+						<option value="" selected>가장 기억에 남는 장소는?</option>
+						<option value="">나의 좌우명은?</option>
+					</select>
+				</span></td>						
+			<th><span class="must">비밀번호 정답</span></th>	
+			<td class="aL"><input type="text" name="" class="inbox w230" title="비밀번호 정답"></td>													
+		</tr>
+		<tr>
+			<th><span class="must">성명</span></th>	
+			<td class="aL"><input type="text" name="" class="inbox w100" title="성명"></td>						
+			<th>소속</th>	
+			<td class="aL">
+				<span class="select-box">
+					<select name="search_type" id="search_type" class="w150" title="소속 선택">
+						<option value="" selected>대구본사</option>
+						<option value="">대구공장</option>
+					</select>
+				</span>
+			</td>													
+		</tr>
+		<tr>
+			<th>부서</th>	
+			<td class="aL">
+				<span class="select-box">
+					<select name="search_type" id="search_type" class="w150" title="부서 선택">
+						<option value="" selected>경영기획부</option>
+						<option value="">총무부</option>
+					</select>
+				</span>
+			</td>						
+			<th>직급</th>	
+			<td class="aL">
+				<span class="select-box">
+					<select name="search_type" id="search_type" class="w100" title="직급 선택">
+						<option value="" selected>대리</option>
+						<option value="">과장</option>
+					</select>
+				</span>
+			</td>													
+		</tr>
+		<tr>
+			<th>소속팀</th>	
+			<td class="aL">
+				<span class="select-box">
+					<select name="search_type" id="search_type" class="w150" title="소속팀 선택">
+						<option value="" selected>기획1팀</option>
+						<option value="">기획2팀</option>
+					</select>
+				</span>
+			</td>	
+			<th>직책</th>	
+			<td class="aL">
+				<span class="select-box">
+					<select name="search_type" id="search_type" class="w100" title="직책 선택">
+						<option value="" selected>팀원</option>
+						<option value="">팀장</option>
+					</select>
+				</span>
+			</td>												
+		</tr>
+		<tr>
+			<th>이메일</th>	
+			<td class="aL"><input type="text" name="" class="inbox w250" title="이메일"></td>	
+			<th>전화번호(집)</th>	
+			<td class="aL">
+				<span class="select-box">
+					<select name="search_type" id="search_type" class="w90" title="집전화번호 지역선택">
+						<option value="" selected title="053대구">053(대구)</option>
+						<option value="" title="02서울">02(서울)</option>
+					</select>
+				</span> - <input type="text" name="" class="inbox w50" title="집전화번호 국번"> - <input type="text" name="" class="inbox w50" title="집전화번호 뒷번호">
+			</td>												
+		</tr>
+		<tr>
+			<th>전화번호(회사)</th>	
+			<td class="aL">
+				<span class="select-box">
+					<select name="search_type" id="search_type" class="w90" title="회사전화번호 지역선택">
+						<option value="" selected title="053대구">053(대구)</option>
+						<option value="" title="02서울">02(서울)</option>
+					</select>
+				</span> - <input type="text" name="" class="inbox w50" title="회사전화 국번"> - <input type="text" name="" class="inbox w50" title="회사전화 뒷번호">
+			</td>	
+			<th>팩스번호</th>	
+			<td class="aL">
+				<span class="select-box">
+					<select name="search_type" id="search_type" class="w90" title="팩스번호 지역선택">
+						<option value="" selected title="053대구">053(대구)</option>
+						<option value="" title="02서울">02(서울)</option>
+					</select>
+				</span> - <input type="text" name="" class="inbox w50" title="팩스 국번"> - <input type="text" name="" class="inbox w50" title="팩스 뒷번호">
+			</td>												
+		</tr>
+		<tr>
+			<th>주소</th>	
+			<td class="aL" colspan="3">
+				<ul class="zip_code">
+					<li><input type="text" name="" class="inbox w50" title="우편번호 앞자리"> - <input type="text" name="" class="inbox w50" title="우편번호 뒷자리"> <a href="#none"><img src="../img/btn_zipCode.gif" alt="우편번호찾기"></a></li>
+					<li><input type="text" name="" class="inbox w400" placeholder="기본주소는 우편번호를 선택하면 자동입력됩니다." title="기본주소"></li>
+					<li><input type="text" name="" class="inbox w400" placeholder="상세주소를 입력해주세요." title="상세주소"></li>
+				</ul>
+			</td>													
+		</tr>
+		</tbody>
+	</table>
+	</div>
+	<div class="btnAreaC">
+		<span class="button CB"><a href="">확인</a></span>
+		<span class="button KB"><a href="">취소</a></span>
+		<span class="button CB"><a href="">암호변경 하러가기</a></span>
+	</div>
+</section>
+<!-- //contents 끝 -->
+
+<!-- 비밀번호변경 -->
+<!-- contents 시작 -->
+<section id="contents">
+	<section class="expArea">
+		지식관리시스템 사용자 전체목록입니다.<br>
+		지식관리시스템 사용자 정보를 자세히 보거나 수정, 삭제할 수 있으며 새로운 사용자를 등록할 수 있습니다.<br>
+	</section>
+	<section class="brd_info clearfix">
+		<img src="../img/ico_must.png"  alt="필수입력항목"> 는 필수입력항목입니다.
+	</section>
+	<div class="brd_write clearfix">
+	<table class="tbl_type_3">
+		<col style="width:180px;">
+		<col>
+		<tbody>
+		<tr>
+			<th class="FC">아이디</th>	
+			<td class="aL FC txt">aaabbbccc</td>																	
+		</tr>
+		<tr>
+			<th><span class="must">현재 비밀번호</span></th>	
+			<td class="aL"><input type="password" name="" class="inbox w150" title="현재 비밀번호"></td>																			
+		</tr>
+		<tr>
+			<th><span class="must">새 비밀번호</span></th>	
+			<td class="aL"><input type="password" name="" class="inbox w150" title="새 비밀번호"></td>																			
+		</tr>
+		<tr>
+			<th><span class="must">새 비밀번호 확인</span></th>	
+			<td class="aL"><input type="password" name="" class="inbox w150" title="새 비밀번호 확인"></td>																			
+		</tr>
+		</tbody>
+	</table>
+	</div>
+	<div class="btnAreaC">
+		<span class="button CB"><a href="">변경하기</a></span>
+		<span class="button KB"><a href="">취소</a></span>
+	</div>
+</section>
+<!-- //contents 끝 -->
